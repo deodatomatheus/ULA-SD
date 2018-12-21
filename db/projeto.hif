@@ -1,0 +1,383 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+12
+1222
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+AND_E_XOR
+# storage
+db|projeto.(1).cnf
+db|projeto.(1).cnf
+# case_insensitive
+# source_file
+and_e_xor.bdf
+725357c2f61f8fcda7980131bfada61
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AND_E_XOR:inst19
+}
+# macro_sequence
+
+# end
+# entity
+Block1
+# storage
+db|projeto.(2).cnf
+db|projeto.(2).cnf
+# case_insensitive
+# source_file
+block1.bdf
+48fcecfd6a308292a380fcbb2c29799b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AND_E_XOR:inst19|Block1:inst2
+}
+# macro_sequence
+
+# end
+# entity
+Block4
+# storage
+db|projeto.(3).cnf
+db|projeto.(3).cnf
+# case_insensitive
+# source_file
+block4.bdf
+937cb7a822fc9538c515b7b46ae8c9c4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+AND_E_XOR:inst19|Block4:inst
+}
+# macro_sequence
+
+# end
+# entity
+Block2
+# storage
+db|projeto.(4).cnf
+db|projeto.(4).cnf
+# case_insensitive
+# source_file
+block2.bdf
+2470ed33cf1d487edd32e72b90dc29
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block2:inst
+PROJULA:inst4|Block2:inst57
+PROJULA:inst4|Block2:inst105
+PROJULA:inst4|Block2:inst100
+PROJULA:inst4|Block2:inst98
+PROJULA:inst4|Block2:inst99
+}
+# macro_sequence
+
+# end
+# entity
+Block3
+# storage
+db|projeto.(5).cnf
+db|projeto.(5).cnf
+# case_insensitive
+# source_file
+block3.bdf
+8dd58e37c146e719371596abea4a5b8a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block2:inst|Block3:inst
+PROJULA:inst4|Block2:inst57|Block3:inst
+PROJULA:inst4|Block2:inst105|Block3:inst
+PROJULA:inst4|Block2:inst100|Block3:inst
+PROJULA:inst4|Block2:inst98|Block3:inst
+PROJULA:inst4|Block2:inst99|Block3:inst
+}
+# macro_sequence
+
+# end
+# entity
+projeto
+# storage
+db|projeto.(6).cnf
+db|projeto.(6).cnf
+# case_insensitive
+# source_file
+projeto.bdf
+b73ca3358c795b3ed77495c8225be7
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Block2:inst|projeto:inst3
+PROJULA:inst4|Block2:inst57|projeto:inst3
+PROJULA:inst4|Block2:inst105|projeto:inst3
+PROJULA:inst4|Block2:inst100|projeto:inst3
+PROJULA:inst4|Block2:inst98|projeto:inst3
+PROJULA:inst4|Block2:inst99|projeto:inst3
+}
+# macro_sequence
+
+# end
+# entity
+COMPLEMENTOdeB
+# storage
+db|projeto.(7).cnf
+db|projeto.(7).cnf
+# case_insensitive
+# source_file
+complementodeb.bdf
+afa4266728321a6d8650a43f2e7b6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+COMPLEMENTOdeB:inst3
+}
+# macro_sequence
+
+# end
+# entity
+COMPLEMENTO
+# storage
+db|projeto.(8).cnf
+db|projeto.(8).cnf
+# case_insensitive
+# source_file
+complemento.bdf
+624f6ab1408a30fd3b401a4d436c21
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+COMPLEMENTOdeB:inst3|complemento:inst
+PROJULA:inst4|complemento:inst1
+PROJULA:inst4|complemento:inst4
+PROJULA:inst4|complemento:inst
+PROJULA:inst4|complemento:inst6
+}
+# macro_sequence
+
+# end
+# entity
+SOMADOR
+# storage
+db|projeto.(9).cnf
+db|projeto.(9).cnf
+# case_insensitive
+# source_file
+somador.bdf
+6af5be9bc4da9a846829b19d98c3ec74
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+COMPLEMENTOdeB:inst3|complemento:inst|somador:inst
+PROJULA:inst4|somador:inst2
+PROJULA:inst4|somador:inst3
+PROJULA:inst4|complemento:inst1|somador:inst
+PROJULA:inst4|complemento:inst4|somador:inst
+PROJULA:inst4|somador:inst5
+PROJULA:inst4|complemento:inst|somador:inst
+PROJULA:inst4|complemento:inst6|somador:inst
+}
+# macro_sequence
+
+# end
+# entity
+SomadorP
+# storage
+db|projeto.(10).cnf
+db|projeto.(10).cnf
+# case_insensitive
+# source_file
+somadorp.bdf
+20dd1595eef76a297ea141f08a3f872d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+COMPLEMENTOdeB:inst3|complemento:inst|somador:inst|somadorp:inst3
+COMPLEMENTOdeB:inst3|complemento:inst|somador:inst|somadorp:inst2
+COMPLEMENTOdeB:inst3|complemento:inst|somador:inst|somadorp:inst1
+COMPLEMENTOdeB:inst3|complemento:inst|somador:inst|somadorp:inst
+PROJULA:inst4|somador:inst2|somadorp:inst3
+PROJULA:inst4|somador:inst2|somadorp:inst2
+PROJULA:inst4|somador:inst2|somadorp:inst1
+PROJULA:inst4|somador:inst2|somadorp:inst
+PROJULA:inst4|somador:inst3|somadorp:inst3
+PROJULA:inst4|somador:inst3|somadorp:inst2
+PROJULA:inst4|somador:inst3|somadorp:inst1
+PROJULA:inst4|somador:inst3|somadorp:inst
+PROJULA:inst4|complemento:inst1|somador:inst|somadorp:inst3
+PROJULA:inst4|complemento:inst1|somador:inst|somadorp:inst2
+PROJULA:inst4|complemento:inst1|somador:inst|somadorp:inst1
+PROJULA:inst4|complemento:inst1|somador:inst|somadorp:inst
+PROJULA:inst4|complemento:inst4|somador:inst|somadorp:inst3
+PROJULA:inst4|complemento:inst4|somador:inst|somadorp:inst2
+PROJULA:inst4|complemento:inst4|somador:inst|somadorp:inst1
+PROJULA:inst4|complemento:inst4|somador:inst|somadorp:inst
+PROJULA:inst4|somador:inst5|somadorp:inst3
+PROJULA:inst4|somador:inst5|somadorp:inst2
+PROJULA:inst4|somador:inst5|somadorp:inst1
+PROJULA:inst4|somador:inst5|somadorp:inst
+PROJULA:inst4|complemento:inst|somador:inst|somadorp:inst3
+PROJULA:inst4|complemento:inst|somador:inst|somadorp:inst2
+PROJULA:inst4|complemento:inst|somador:inst|somadorp:inst1
+PROJULA:inst4|complemento:inst|somador:inst|somadorp:inst
+PROJULA:inst4|complemento:inst6|somador:inst|somadorp:inst3
+PROJULA:inst4|complemento:inst6|somador:inst|somadorp:inst2
+PROJULA:inst4|complemento:inst6|somador:inst|somadorp:inst1
+PROJULA:inst4|complemento:inst6|somador:inst|somadorp:inst
+}
+# macro_sequence
+
+# end
+# entity
+PROJULA
+# storage
+db|projeto.(14).cnf
+db|projeto.(14).cnf
+# case_insensitive
+# source_file
+projula.bdf
+aded5db23d19da65bca204bcd2c9d49
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PROJULA:inst4
+}
+# macro_sequence
+
+# end
+# entity
+DECODIFICADOR
+# storage
+db|projeto.(13).cnf
+db|projeto.(13).cnf
+# case_insensitive
+# source_file
+decodificador.bdf
+366820972b321b91f986ba614a2f66a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+decodificador:inst8
+}
+# macro_sequence
+
+# end
+# entity
+selectDisplay
+# storage
+db|projeto.(11).cnf
+db|projeto.(11).cnf
+# case_insensitive
+# source_file
+selectdisplay.bdf
+66d2d8d7732fd6c0b739d8818ca1185c
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+selectDisplay:inst15
+selectDisplay:inst14
+selectDisplay:inst13
+}
+# macro_sequence
+
+# end
+# entity
+SETE_SEGMENTOS
+# storage
+db|projeto.(12).cnf
+db|projeto.(12).cnf
+# case_insensitive
+# source_file
+sete_segmentos.bdf
+9dacdae0449a5f0dc4519a5ca9a1b33
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SETE_SEGMENTOS:inst1
+SETE_SEGMENTOS:inst2
+}
+# macro_sequence
+
+# end
+# entity
+MENOR
+# storage
+db|projeto.(0).cnf
+db|projeto.(0).cnf
+# case_insensitive
+# source_file
+menor.bdf
+b8ddcea26718b53e94a2c5141261314
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

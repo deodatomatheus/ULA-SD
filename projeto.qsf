@@ -1,0 +1,146 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2010 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+# Date created = 15:44:46  April 26, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		projeto_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY MENOR
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:44:46  APRIL 26, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name BDF_FILE projeto.bdf
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name MISC_FILE "C:/Users/ntsn/Desktop/projeto/projeto.dpf"
+set_global_assignment -name BDF_FILE Block2.bdf
+set_global_assignment -name BDF_FILE Block3.bdf
+set_global_assignment -name MISC_FILE "C:/Users/mdo2/Desktop/projeto SD/projeto.dpf"
+set_global_assignment -name BDF_FILE MENOR.bdf
+set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name BDF_FILE XOR.bdf
+set_global_assignment -name BDF_FILE Block4.bdf
+set_global_assignment -name BDF_FILE AND_E_XOR.bdf
+set_global_assignment -name BDF_FILE decod.bdf
+set_global_assignment -name MISC_FILE "C:/Users/mdo2/Desktop/projeto SD com DECODER/projeto.dpf"
+set_global_assignment -name BDF_FILE SETE_SEGMENTOS.bdf
+set_location_assignment PIN_Y23 -to A0
+set_location_assignment PIN_Y24 -to A1
+set_location_assignment PIN_AA22 -to A2
+set_location_assignment PIN_AA23 -to A3
+set_location_assignment PIN_AA24 -to A4
+set_location_assignment PIN_AB23 -to B0
+set_location_assignment PIN_AB24 -to B1
+set_location_assignment PIN_AC24 -to B2
+set_location_assignment PIN_AB25 -to B3
+set_location_assignment PIN_AC25 -to B4
+set_location_assignment PIN_AC27 -to SEL_0
+set_location_assignment PIN_AC28 -to SEL_1
+set_location_assignment PIN_AB28 -to SEL_2
+set_location_assignment PIN_G19 -to led_2
+set_location_assignment PIN_F19 -to led_1
+set_location_assignment PIN_E19 -to led_0
+set_location_assignment PIN_G21 -to S0
+set_location_assignment PIN_G22 -to S1
+set_location_assignment PIN_G20 -to S2
+set_location_assignment PIN_H21 -to S3
+set_location_assignment PIN_E24 -to S4
+set_location_assignment PIN_AA17 -to sete_a
+set_location_assignment PIN_AB16 -to sete_b
+set_location_assignment PIN_AA16 -to sete_c
+set_location_assignment PIN_AB17 -to sete_d
+set_location_assignment PIN_AB15 -to sete_e
+set_location_assignment PIN_AA15 -to sete_f
+set_location_assignment PIN_AC17 -to sete_g
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_location_assignment PIN_AD17 -to sete_0
+set_location_assignment PIN_AE17 -to sete_1
+set_location_assignment PIN_AD18 -to sete_1_0
+set_location_assignment PIN_AC18 -to sete_1_1
+set_location_assignment PIN_AB18 -to sete_1_2
+set_location_assignment PIN_AG17 -to sete_2
+set_location_assignment PIN_AH17 -to sete_3
+set_location_assignment PIN_AF17 -to sete_4
+set_location_assignment PIN_AG18 -to sete_5
+set_location_assignment PIN_AA14 -to sete_6
+set_location_assignment PIN_AB19 -to sete_1_a
+set_location_assignment PIN_AG19 -to sete_1_4
+set_location_assignment PIN_AH21 -to sete_1_d
+set_location_assignment PIN_AA19 -to sete_1_b
+set_location_assignment PIN_AG21 -to sete_1_c
+set_location_assignment PIN_AE19 -to sete_1_e
+set_location_assignment PIN_AF19 -to sete_1_f
+set_location_assignment PIN_AE18 -to sete_1_g
+set_location_assignment PIN_AH19 -to sete_1_3
+set_location_assignment PIN_AF18 -to sete_1_5
+set_location_assignment PIN_AH18 -to sete_1_6
+set_global_assignment -name BDF_FILE selectDisplay.bdf
+set_global_assignment -name BDF_FILE PROJULA.bdf
+set_location_assignment PIN_H17 -to C2a0
+set_location_assignment PIN_F15 -to C2a1
+set_location_assignment PIN_G15 -to C2a2
+set_location_assignment PIN_G16 -to C2a3
+set_location_assignment PIN_J17 -to C2b0
+set_location_assignment PIN_G17 -to C2b1
+set_location_assignment PIN_J15 -to C2b2
+set_location_assignment PIN_H16 -to C2b3
+set_global_assignment -name BDF_FILE COMPLEMENTOdeB.bdf
+set_location_assignment PIN_G18 -to EX0_0
+set_location_assignment PIN_F22 -to EX0_1
+set_location_assignment PIN_E17 -to EX0_2
+set_location_assignment PIN_L26 -to EX0_3
+set_location_assignment PIN_L25 -to EX0_4
+set_location_assignment PIN_J22 -to EX0_5
+set_location_assignment PIN_H22 -to EX0_6
+set_location_assignment PIN_M24 -to EX1_0
+set_location_assignment PIN_Y22 -to EX1_1
+set_location_assignment PIN_W21 -to EX1_2
+set_location_assignment PIN_W22 -to EX1_3
+set_location_assignment PIN_W25 -to EX1_4
+set_location_assignment PIN_U23 -to EX1_5
+set_location_assignment PIN_U24 -to EX1_6
+set_location_assignment PIN_W28 -to SINAL
+set_global_assignment -name MISC_FILE "C:/Users/mdo2/Desktop/projeto SD.8/projeto.dpf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

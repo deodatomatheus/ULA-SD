@@ -1,0 +1,1917 @@
+|MENOR
+S0 <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+A0 => AND_E_XOR:inst19.A0
+A0 => Block2:inst.A0
+A0 => PROJULA:inst4.A0
+B0 => AND_E_XOR:inst19.B0
+B0 => Block2:inst.B0
+B0 => PROJULA:inst4.B0
+A1 => AND_E_XOR:inst19.A1
+A1 => Block2:inst.A1
+A1 => SETE_SEGMENTOS:inst1.P0
+A1 => PROJULA:inst4.A1
+B1 => AND_E_XOR:inst19.B1
+B1 => Block2:inst.B1
+B1 => COMPLEMENTOdeB:inst3.IN0
+B1 => SETE_SEGMENTOS:inst2.P0
+B1 => PROJULA:inst4.B1
+A2 => AND_E_XOR:inst19.A2
+A2 => Block2:inst.A2
+A2 => SETE_SEGMENTOS:inst1.P1
+A2 => PROJULA:inst4.A2
+B2 => AND_E_XOR:inst19.B2
+B2 => Block2:inst.B2
+B2 => COMPLEMENTOdeB:inst3.IN1
+B2 => SETE_SEGMENTOS:inst2.P1
+B2 => PROJULA:inst4.B2
+A3 => AND_E_XOR:inst19.A3
+A3 => Block2:inst.A3
+A3 => SETE_SEGMENTOS:inst1.P2
+A3 => PROJULA:inst4.A3
+B3 => AND_E_XOR:inst19.B3
+B3 => Block2:inst.B3
+B3 => COMPLEMENTOdeB:inst3.IN2
+B3 => SETE_SEGMENTOS:inst2.P2
+B3 => PROJULA:inst4.B3
+A4 => AND_E_XOR:inst19.A4
+A4 => Block2:inst.A4
+A4 => SETE_SEGMENTOS:inst1.P3
+A4 => PROJULA:inst4.A4
+B4 => AND_E_XOR:inst19.B4
+B4 => Block2:inst.B4
+B4 => COMPLEMENTOdeB:inst3.IN3
+B4 => SETE_SEGMENTOS:inst2.P3
+B4 => PROJULA:inst4.B4
+SEL_0 => AND_E_XOR:inst19.SEL_0
+SEL_0 => Block2:inst.SEL2
+SEL_0 => COMPLEMENTOdeB:inst3.SEL0
+SEL_0 => led_0.DATAIN
+SEL_0 => inst10.IN0
+SEL_1 => AND_E_XOR:inst19.SEL_1
+SEL_1 => Block2:inst.SEL1
+SEL_1 => COMPLEMENTOdeB:inst3.SEL1
+SEL_1 => led_1.DATAIN
+SEL_1 => inst9.IN0
+SEL_2 => AND_E_XOR:inst19.SEL_2
+SEL_2 => Block2:inst.SEL0
+SEL_2 => COMPLEMENTOdeB:inst3.SEL2
+SEL_2 => led_2.DATAIN
+SEL_2 => PROJULA:inst4.OP
+S1 <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= AND_E_XOR:inst19.S4
+led_0 <= SEL_0.DB_MAX_OUTPUT_PORT_TYPE
+led_1 <= SEL_1.DB_MAX_OUTPUT_PORT_TYPE
+led_2 <= SEL_2.DB_MAX_OUTPUT_PORT_TYPE
+sete_a <= selectDisplay:inst15.s1
+sete_b <= selectDisplay:inst15.s2
+sete_c <= selectDisplay:inst15.s3
+sete_d <= selectDisplay:inst15.s4
+sete_e <= selectDisplay:inst15.s5
+sete_f <= selectDisplay:inst15.s6
+sete_g <= selectDisplay:inst15.s7
+sete_0 <= selectDisplay:inst15.s8
+sete_1 <= selectDisplay:inst15.s9
+sete_2 <= selectDisplay:inst15.s10
+sete_3 <= selectDisplay:inst15.s11
+sete_4 <= selectDisplay:inst15.s12
+sete_5 <= selectDisplay:inst15.s13
+sete_6 <= selectDisplay:inst15.s14
+sete_1_a <= selectDisplay:inst14.s1
+sete_1_b <= selectDisplay:inst14.s2
+sete_1_c <= selectDisplay:inst14.s3
+sete_1_d <= selectDisplay:inst14.s4
+sete_1_e <= selectDisplay:inst14.s5
+sete_1_f <= selectDisplay:inst14.s6
+sete_1_g <= selectDisplay:inst14.s7
+sete_1_0 <= selectDisplay:inst14.s8
+sete_1_1 <= selectDisplay:inst14.s9
+sete_1_2 <= selectDisplay:inst14.s10
+sete_1_3 <= selectDisplay:inst14.s11
+sete_1_4 <= selectDisplay:inst14.s12
+sete_1_5 <= selectDisplay:inst14.s13
+sete_1_6 <= selectDisplay:inst14.s14
+EX0_1 <= selectDisplay:inst13.s9
+EX0_2 <= selectDisplay:inst13.s10
+EX0_3 <= selectDisplay:inst13.s11
+EX0_4 <= selectDisplay:inst13.s12
+EX0_0 <= selectDisplay:inst13.s8
+EX0_5 <= selectDisplay:inst13.s13
+EX0_6 <= selectDisplay:inst13.s14
+EX1_0 <= selectDisplay:inst13.s1
+EX1_1 <= selectDisplay:inst13.s2
+EX1_2 <= selectDisplay:inst13.s3
+EX1_3 <= selectDisplay:inst13.s4
+EX1_4 <= selectDisplay:inst13.s5
+EX1_5 <= selectDisplay:inst13.s6
+EX1_6 <= selectDisplay:inst13.s7
+SINAL <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|AND_E_XOR:inst19
+S0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A0 => Block1:inst2.A0
+A0 => Block4:inst.A0
+B0 => Block1:inst2.B0
+B0 => Block4:inst.B0
+A1 => Block1:inst2.A1
+A1 => Block4:inst.A1
+B1 => Block1:inst2.B1
+B1 => Block4:inst.B1
+A2 => Block1:inst2.A2
+A2 => Block4:inst.A2
+B2 => Block1:inst2.B2
+B2 => Block4:inst.B2
+A3 => Block1:inst2.A3
+A3 => Block4:inst.A3
+B3 => Block1:inst2.B3
+B3 => Block4:inst.B3
+A4 => Block1:inst2.A4
+A4 => Block4:inst.A4
+B4 => Block1:inst2.B4
+B4 => Block4:inst.B4
+SEL_0 => Block1:inst2.SEL_0
+SEL_0 => Block4:inst.SEL_0
+SEL_1 => Block1:inst2.SEL_1
+SEL_1 => Block4:inst.SEL_1
+SEL_2 => Block1:inst2.SEL_2
+SEL_2 => Block4:inst.SEL_2
+S1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|AND_E_XOR:inst19|Block1:inst2
+a <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst.IN0
+B0 => inst.IN1
+SEL_0 => inst31.IN1
+SEL_0 => inst33.IN1
+SEL_0 => inst32.IN1
+SEL_0 => inst34.IN1
+SEL_0 => inst35.IN1
+SEL_1 => inst31.IN2
+SEL_1 => inst33.IN2
+SEL_1 => inst32.IN2
+SEL_1 => inst34.IN2
+SEL_1 => inst35.IN2
+SEL_2 => inst30.IN0
+b <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst25.IN0
+B1 => inst25.IN1
+c <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst26.IN0
+B2 => inst26.IN1
+d <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst27.IN0
+B3 => inst27.IN1
+e <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst28.IN0
+B4 => inst28.IN1
+
+
+|MENOR|AND_E_XOR:inst19|Block4:inst
+a <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst.IN0
+B0 => inst.IN1
+SEL_0 => inst31.IN1
+SEL_0 => inst33.IN1
+SEL_0 => inst32.IN1
+SEL_0 => inst34.IN1
+SEL_0 => inst35.IN1
+SEL_1 => inst31.IN2
+SEL_1 => inst33.IN2
+SEL_1 => inst32.IN2
+SEL_1 => inst34.IN2
+SEL_1 => inst35.IN2
+SEL_2 => inst31.IN3
+SEL_2 => inst33.IN3
+SEL_2 => inst32.IN3
+SEL_2 => inst34.IN3
+SEL_2 => inst35.IN3
+b <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+A1 => inst1.IN0
+B1 => inst1.IN1
+c <= inst32.DB_MAX_OUTPUT_PORT_TYPE
+A2 => inst2.IN0
+B2 => inst2.IN1
+d <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+A3 => inst3.IN0
+B3 => inst3.IN1
+e <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+A4 => inst4.IN0
+B4 => inst4.IN1
+
+
+|MENOR|Block2:inst
+OUTPUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => Block3:inst.A0
+A0 => projeto:inst3.A0
+B0 => Block3:inst.B0
+B0 => projeto:inst3.B0
+A1 => Block3:inst.A1
+A1 => projeto:inst3.A1
+B1 => Block3:inst.B1
+B1 => projeto:inst3.B1
+A2 => Block3:inst.A2
+A2 => projeto:inst3.A2
+B2 => Block3:inst.B2
+B2 => projeto:inst3.B2
+A3 => Block3:inst.A3
+A3 => projeto:inst3.A3
+B3 => Block3:inst.B3
+B3 => projeto:inst3.B3
+A4 => Block3:inst.A4
+A4 => projeto:inst3.A4
+B4 => Block3:inst.B4
+B4 => projeto:inst3.B4
+SEL0 => inst11.IN1
+SEL0 => inst5.IN5
+SEL0 => inst15.IN0
+SEL1 => inst11.IN2
+SEL1 => inst8.IN0
+SEL1 => inst14.IN0
+SEL2 => inst17.IN0
+SEL2 => inst5.IN3
+SEL2 => inst4.IN0
+
+
+|MENOR|Block2:inst|Block3:inst
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst7.IN0
+B4 => inst4.IN1
+B3 => inst7.IN1
+B3 => inst3.IN1
+A4 => inst7.IN2
+A4 => inst4.IN0
+A3 => inst7.IN3
+A3 => inst3.IN0
+A2 => inst7.IN4
+A2 => inst2.IN0
+B2 => inst7.IN5
+B2 => inst2.IN1
+B1 => inst7.IN6
+B1 => inst1.IN1
+A1 => inst7.IN7
+A1 => inst1.IN0
+A0 => inst.IN0
+B0 => inst.IN1
+
+
+|MENOR|Block2:inst|projeto:inst3
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst7.IN0
+A1 => inst24.IN0
+A1 => inst.IN0
+A1 => inst2.IN0
+A1 => inst11.IN0
+B1 => inst.IN1
+B1 => inst25.IN0
+B1 => inst2.IN1
+B1 => inst11.IN2
+A3 => inst30.IN0
+A3 => inst20.IN0
+A3 => inst4.IN0
+A3 => inst11.IN5
+A2 => inst19.IN0
+A2 => inst27.IN1
+A2 => inst3.IN0
+A2 => inst11.IN1
+B2 => inst19.IN1
+B2 => inst28.IN0
+B2 => inst3.IN1
+B2 => inst11.IN3
+B3 => inst20.IN1
+B3 => inst31.IN0
+B3 => inst4.IN1
+B3 => inst11.IN4
+A4 => inst32.IN1
+A4 => inst21.IN0
+A4 => inst5.IN0
+A4 => inst11.IN6
+B4 => inst21.IN1
+B4 => inst34.IN0
+B4 => inst5.IN1
+B4 => inst11.IN7
+B0 => inst37.IN0
+
+
+|MENOR|COMPLEMENTOdeB:inst3
+SO <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+IN0 => COMPLEMENTO:inst.IN0
+IN1 => COMPLEMENTO:inst.IN1
+IN2 => COMPLEMENTO:inst.IN2
+IN3 => COMPLEMENTO:inst.IN3
+SEL0 => inst5.IN0
+SEL1 => inst7.IN2
+SEL1 => inst8.IN2
+SEL1 => inst9.IN2
+SEL1 => inst10.IN2
+SEL1 => inst11.IN2
+SEL2 => inst6.IN0
+S1 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|COMPLEMENTOdeB:inst3|COMPLEMENTO:inst
+OUT0 <= SOMADOR:inst.S4
+IN3 => inst7.IN0
+IN0 => inst4.IN0
+IN0 => inst2.IN1
+IN0 => inst1.IN0
+IN2 => inst6.IN0
+IN1 => inst5.IN0
+OUT1 <= SOMADOR:inst.S3
+OUT2 <= SOMADOR:inst.S2
+OUT3 <= SOMADOR:inst.S1
+SINAL <= SOMADOR:inst.S0
+
+
+|MENOR|COMPLEMENTOdeB:inst3|COMPLEMENTO:inst|SOMADOR:inst
+S1 <= SomadorP:inst3.sum
+a1 => SomadorP:inst.A
+b1 => SomadorP:inst.B
+a2 => SomadorP:inst1.A
+b2 => SomadorP:inst1.B
+a3 => SomadorP:inst2.A
+b3 => SomadorP:inst2.B
+a4 => SomadorP:inst3.A
+b4 => SomadorP:inst3.B
+S2 <= SomadorP:inst2.sum
+S3 <= SomadorP:inst1.sum
+S4 <= SomadorP:inst.sum
+S0 <= SomadorP:inst3.carryOUT
+
+
+|MENOR|COMPLEMENTOdeB:inst3|COMPLEMENTO:inst|SOMADOR:inst|SomadorP:inst3
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|COMPLEMENTOdeB:inst3|COMPLEMENTO:inst|SOMADOR:inst|SomadorP:inst2
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|COMPLEMENTOdeB:inst3|COMPLEMENTO:inst|SOMADOR:inst|SomadorP:inst1
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|COMPLEMENTOdeB:inst3|COMPLEMENTO:inst|SOMADOR:inst|SomadorP:inst
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|selectDisplay:inst15
+s1 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+In1 => inst13.IN0
+SELETOR => inst13.IN1
+SELETOR => inst14.IN1
+SELETOR => inst15.IN1
+SELETOR => inst16.IN1
+SELETOR => inst12.IN1
+SELETOR => inst38.IN1
+SELETOR => inst39.IN1
+SELETOR => inst40.IN1
+SELETOR => inst41.IN1
+SELETOR => inst21.IN1
+SELETOR => inst42.IN1
+SELETOR => inst43.IN1
+SELETOR => inst44.IN1
+SELETOR => inst45.IN1
+s2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+In2 => inst14.IN0
+s3 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+In3 => inst15.IN0
+s4 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+In4 => inst16.IN0
+s5 <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+In5 => inst12.IN0
+s6 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+In6 => inst38.IN0
+s7 <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+In7 => inst39.IN0
+s8 <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+In8 => inst40.IN0
+s9 <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+In9 => inst41.IN0
+s10 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+In10 => inst21.IN0
+s11 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+In11 => inst42.IN0
+s12 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+In12 => inst43.IN0
+s13 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+In13 => inst44.IN0
+s14 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+In14 => inst45.IN0
+
+
+|MENOR|SETE_SEGMENTOS:inst1
+a <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+P1 => inst11.IN0
+P1 => inst16.IN0
+P1 => inst27.IN0
+P1 => inst30.IN1
+P1 => inst31.IN2
+P1 => inst45.IN2
+P1 => inst44.IN2
+P1 => inst71.IN1
+P1 => inst67.IN0
+P1 => inst70.IN1
+P1 => inst69.IN1
+P3 => inst13.IN0
+P3 => inst16.IN1
+P3 => inst37.IN0
+P3 => inst24.IN0
+P3 => inst30.IN0
+P3 => inst31.IN1
+P3 => inst53.IN0
+P3 => inst54.IN1
+P0 => inst61.IN0
+P0 => inst.IN0
+P0 => inst22.IN1
+P0 => inst20.IN1
+P0 => inst28.IN1
+P0 => inst30.IN2
+P0 => inst34.IN1
+P0 => inst42.IN0
+P0 => inst46.IN0
+P0 => inst65.IN0
+P0 => inst71.IN0
+P0 => inst68.IN1
+P0 => inst67.IN1
+P2 => inst12.IN0
+P2 => inst17.IN1
+P2 => inst37.IN1
+P2 => inst27.IN1
+P2 => inst32.IN1
+P2 => inst33.IN0
+P2 => inst41.IN2
+P2 => inst71.IN2
+P2 => inst36.IN0
+b <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst63.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+e2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+f2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+c2 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+g2 <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|selectDisplay:inst14
+s1 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+In1 => inst13.IN0
+SELETOR => inst13.IN1
+SELETOR => inst14.IN1
+SELETOR => inst15.IN1
+SELETOR => inst16.IN1
+SELETOR => inst12.IN1
+SELETOR => inst38.IN1
+SELETOR => inst39.IN1
+SELETOR => inst40.IN1
+SELETOR => inst41.IN1
+SELETOR => inst21.IN1
+SELETOR => inst42.IN1
+SELETOR => inst43.IN1
+SELETOR => inst44.IN1
+SELETOR => inst45.IN1
+s2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+In2 => inst14.IN0
+s3 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+In3 => inst15.IN0
+s4 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+In4 => inst16.IN0
+s5 <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+In5 => inst12.IN0
+s6 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+In6 => inst38.IN0
+s7 <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+In7 => inst39.IN0
+s8 <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+In8 => inst40.IN0
+s9 <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+In9 => inst41.IN0
+s10 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+In10 => inst21.IN0
+s11 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+In11 => inst42.IN0
+s12 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+In12 => inst43.IN0
+s13 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+In13 => inst44.IN0
+s14 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+In14 => inst45.IN0
+
+
+|MENOR|SETE_SEGMENTOS:inst2
+a <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+P1 => inst11.IN0
+P1 => inst16.IN0
+P1 => inst27.IN0
+P1 => inst30.IN1
+P1 => inst31.IN2
+P1 => inst45.IN2
+P1 => inst44.IN2
+P1 => inst71.IN1
+P1 => inst67.IN0
+P1 => inst70.IN1
+P1 => inst69.IN1
+P3 => inst13.IN0
+P3 => inst16.IN1
+P3 => inst37.IN0
+P3 => inst24.IN0
+P3 => inst30.IN0
+P3 => inst31.IN1
+P3 => inst53.IN0
+P3 => inst54.IN1
+P0 => inst61.IN0
+P0 => inst.IN0
+P0 => inst22.IN1
+P0 => inst20.IN1
+P0 => inst28.IN1
+P0 => inst30.IN2
+P0 => inst34.IN1
+P0 => inst42.IN0
+P0 => inst46.IN0
+P0 => inst65.IN0
+P0 => inst71.IN0
+P0 => inst68.IN1
+P0 => inst67.IN1
+P2 => inst12.IN0
+P2 => inst17.IN1
+P2 => inst37.IN1
+P2 => inst27.IN1
+P2 => inst32.IN1
+P2 => inst33.IN0
+P2 => inst41.IN2
+P2 => inst71.IN2
+P2 => inst36.IN0
+b <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+c <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+d <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+e <= inst63.DB_MAX_OUTPUT_PORT_TYPE
+f <= inst40.DB_MAX_OUTPUT_PORT_TYPE
+g <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+a2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+d2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+e2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+f2 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+b2 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+c2 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+g2 <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|selectDisplay:inst13
+s1 <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+In1 => inst13.IN0
+SELETOR => inst13.IN1
+SELETOR => inst14.IN1
+SELETOR => inst15.IN1
+SELETOR => inst16.IN1
+SELETOR => inst12.IN1
+SELETOR => inst38.IN1
+SELETOR => inst39.IN1
+SELETOR => inst40.IN1
+SELETOR => inst41.IN1
+SELETOR => inst21.IN1
+SELETOR => inst42.IN1
+SELETOR => inst43.IN1
+SELETOR => inst44.IN1
+SELETOR => inst45.IN1
+s2 <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+In2 => inst14.IN0
+s3 <= inst53.DB_MAX_OUTPUT_PORT_TYPE
+In3 => inst15.IN0
+s4 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+In4 => inst16.IN0
+s5 <= inst52.DB_MAX_OUTPUT_PORT_TYPE
+In5 => inst12.IN0
+s6 <= inst51.DB_MAX_OUTPUT_PORT_TYPE
+In6 => inst38.IN0
+s7 <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+In7 => inst39.IN0
+s8 <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+In8 => inst40.IN0
+s9 <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+In9 => inst41.IN0
+s10 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+In10 => inst21.IN0
+s11 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+In11 => inst42.IN0
+s12 <= inst37.DB_MAX_OUTPUT_PORT_TYPE
+In12 => inst43.IN0
+s13 <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+In13 => inst44.IN0
+s14 <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+In14 => inst45.IN0
+
+
+|MENOR|DECODIFICADOR:inst8
+SA <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+In0 => inst.IN0
+In0 => inst11.IN0
+In0 => inst20.IN0
+In0 => inst34.IN0
+In0 => inst35.IN0
+In0 => inst38.IN0
+In0 => inst37.IN0
+In0 => inst51.IN0
+In0 => inst52.IN0
+In0 => inst53.IN0
+In0 => inst55.IN0
+In0 => inst67.IN0
+In0 => inst68.IN0
+In0 => inst79.IN0
+In0 => inst77.IN0
+In0 => inst78.IN0
+In0 => inst85.IN0
+In0 => inst91.IN0
+In0 => inst94.IN0
+In0 => inst100.IN0
+In0 => inst104.IN0
+In1 => inst6.IN0
+In1 => inst11.IN1
+In1 => inst18.IN0
+In1 => inst20.IN1
+In1 => inst35.IN1
+In1 => inst38.IN1
+In1 => inst48.IN1
+In1 => inst50.IN0
+In1 => inst61.IN1
+In1 => inst63.IN0
+In1 => inst62.IN1
+In1 => inst66.IN0
+In1 => inst74.IN0
+In1 => inst76.IN0
+In1 => inst81.IN1
+In1 => inst86.IN1
+In1 => inst90.IN0
+In1 => inst89.IN0
+In1 => inst91.IN1
+In1 => inst95.IN1
+In1 => inst97.IN0
+In1 => inst99.IN1
+In2 => inst7.IN0
+In2 => inst13.IN1
+In2 => inst18.IN1
+In2 => inst22.IN1
+In2 => inst32.IN1
+In2 => inst34.IN1
+In2 => inst37.IN1
+In2 => inst47.IN1
+In2 => inst50.IN1
+In2 => inst55.IN1
+In2 => inst69.IN2
+In2 => inst74.IN1
+In2 => inst80.IN1
+In2 => inst81.IN2
+In2 => inst85.IN1
+In2 => inst92.IN2
+In2 => inst93.IN2
+In2 => inst95.IN2
+In2 => inst102.IN1
+In2 => inst99.IN2
+In3 => inst8.IN0
+In3 => inst18.IN2
+In3 => inst46.IN1
+In3 => inst53.IN1
+In3 => inst58.IN2
+In3 => inst60.IN1
+In3 => inst59.IN1
+In3 => inst66.IN1
+In3 => inst73.IN1
+In3 => inst75.IN2
+In3 => inst79.IN2
+In3 => inst78.IN1
+In3 => inst84.IN1
+In3 => inst83.IN1
+In3 => inst90.IN1
+In3 => inst95.IN3
+In3 => inst94.IN3
+In3 => inst98.IN1
+In3 => inst101.IN2
+In3 => inst104.IN2
+SB <= <VCC>
+SC <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+SD <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+SE <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+SF <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+SG <= inst39.DB_MAX_OUTPUT_PORT_TYPE
+S0 <= inst54.DB_MAX_OUTPUT_PORT_TYPE
+In4 => inst47.IN2
+In4 => inst9.IN0
+In4 => inst52.IN2
+In4 => inst57.IN2
+In4 => inst60.IN2
+In4 => inst59.IN2
+In4 => inst70.IN5
+In4 => inst80.IN3
+In4 => inst76.IN2
+In4 => inst81.IN3
+S1 <= inst64.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst70.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= inst71.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= inst87.DB_MAX_OUTPUT_PORT_TYPE
+S5 <= inst96.DB_MAX_OUTPUT_PORT_TYPE
+S6 <= inst107.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4
+S4 <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+A4 => SOMADOR:inst2.a1
+A4 => SOMADOR:inst3.a1
+A4 => inst35.IN0
+A4 => COMPLEMENTO:inst.IN3
+A4 => Block2:inst57.A4
+A4 => Block2:inst105.B4
+B4 => SOMADOR:inst2.b1
+B4 => inst26.IN0
+B4 => COMPLEMENTO:inst1.IN3
+B4 => SOMADOR:inst5.b1
+B4 => Block2:inst57.B4
+B4 => Block2:inst105.A4
+A3 => SOMADOR:inst2.a2
+A3 => SOMADOR:inst3.a2
+A3 => inst35.IN3
+A3 => COMPLEMENTO:inst.IN2
+A3 => Block2:inst57.A3
+A3 => Block2:inst105.B3
+B3 => SOMADOR:inst2.b2
+B3 => inst26.IN3
+B3 => COMPLEMENTO:inst1.IN2
+B3 => SOMADOR:inst5.b2
+B3 => Block2:inst57.B3
+B3 => Block2:inst105.A3
+A2 => SOMADOR:inst2.a3
+A2 => SOMADOR:inst3.a3
+A2 => inst35.IN1
+A2 => COMPLEMENTO:inst.IN1
+A2 => Block2:inst57.A2
+A2 => Block2:inst105.B2
+B2 => SOMADOR:inst2.b3
+B2 => inst26.IN1
+B2 => COMPLEMENTO:inst1.IN1
+B2 => SOMADOR:inst5.b3
+B2 => Block2:inst57.B2
+B2 => Block2:inst105.A2
+A1 => SOMADOR:inst2.a4
+A1 => SOMADOR:inst3.a4
+A1 => inst35.IN2
+A1 => COMPLEMENTO:inst.IN0
+A1 => Block2:inst57.A1
+A1 => Block2:inst105.B1
+B1 => SOMADOR:inst2.b4
+B1 => inst26.IN2
+B1 => COMPLEMENTO:inst1.IN0
+B1 => SOMADOR:inst5.b4
+B1 => Block2:inst57.B1
+B1 => Block2:inst105.A1
+A0 => inst54.IN0
+A0 => inst72.IN1
+A0 => inst77.IN1
+A0 => inst92.IN1
+A0 => inst97.IN1
+A0 => inst68.IN1
+A0 => inst73.IN1
+A0 => inst88.IN1
+A0 => inst93.IN1
+A0 => inst69.IN1
+A0 => inst74.IN1
+A0 => inst89.IN1
+A0 => inst94.IN1
+A0 => inst70.IN1
+A0 => inst75.IN1
+A0 => inst90.IN1
+A0 => inst95.IN1
+A0 => inst71.IN1
+A0 => inst76.IN1
+A0 => inst91.IN1
+A0 => inst96.IN1
+A0 => inst106.IN1
+A0 => inst107.IN1
+B0 => inst55.IN0
+B0 => inst67.IN2
+B0 => inst77.IN2
+B0 => inst82.IN2
+B0 => inst97.IN2
+B0 => inst63.IN2
+B0 => inst73.IN2
+B0 => inst78.IN2
+B0 => inst93.IN2
+B0 => inst64.IN2
+B0 => inst74.IN2
+B0 => inst79.IN2
+B0 => inst94.IN2
+B0 => inst65.IN2
+B0 => inst75.IN2
+B0 => inst80.IN2
+B0 => inst95.IN2
+B0 => inst66.IN2
+B0 => inst76.IN2
+B0 => inst81.IN2
+B0 => inst96.IN2
+B0 => inst103.IN2
+B0 => inst107.IN2
+OP => inst53.IN0
+OP => inst72.IN0
+OP => inst67.IN0
+OP => inst87.IN0
+OP => inst97.IN0
+OP => inst68.IN0
+OP => inst63.IN0
+OP => inst83.IN0
+OP => inst93.IN0
+OP => inst69.IN0
+OP => inst64.IN0
+OP => inst84.IN0
+OP => inst94.IN0
+OP => inst70.IN0
+OP => inst65.IN0
+OP => inst85.IN0
+OP => inst95.IN0
+OP => inst71.IN0
+OP => inst66.IN0
+OP => inst86.IN0
+OP => inst96.IN0
+OP => inst104.IN0
+OP => inst107.IN0
+S0 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+S1 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+SINAL <= inst108.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst2
+S1 <= SomadorP:inst3.sum
+a1 => SomadorP:inst.A
+b1 => SomadorP:inst.B
+a2 => SomadorP:inst1.A
+b2 => SomadorP:inst1.B
+a3 => SomadorP:inst2.A
+b3 => SomadorP:inst2.B
+a4 => SomadorP:inst3.A
+b4 => SomadorP:inst3.B
+S2 <= SomadorP:inst2.sum
+S3 <= SomadorP:inst1.sum
+S4 <= SomadorP:inst.sum
+S0 <= SomadorP:inst3.carryOUT
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst2|SomadorP:inst3
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst2|SomadorP:inst2
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst2|SomadorP:inst1
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst2|SomadorP:inst
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst3
+S1 <= SomadorP:inst3.sum
+a1 => SomadorP:inst.A
+b1 => SomadorP:inst.B
+a2 => SomadorP:inst1.A
+b2 => SomadorP:inst1.B
+a3 => SomadorP:inst2.A
+b3 => SomadorP:inst2.B
+a4 => SomadorP:inst3.A
+b4 => SomadorP:inst3.B
+S2 <= SomadorP:inst2.sum
+S3 <= SomadorP:inst1.sum
+S4 <= SomadorP:inst.sum
+S0 <= SomadorP:inst3.carryOUT
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst3|SomadorP:inst3
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst3|SomadorP:inst2
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst3|SomadorP:inst1
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst3|SomadorP:inst
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst1
+OUT0 <= SOMADOR:inst.S4
+IN3 => inst7.IN0
+IN0 => inst4.IN0
+IN0 => inst2.IN1
+IN0 => inst1.IN0
+IN2 => inst6.IN0
+IN1 => inst5.IN0
+OUT1 <= SOMADOR:inst.S3
+OUT2 <= SOMADOR:inst.S2
+OUT3 <= SOMADOR:inst.S1
+SINAL <= SOMADOR:inst.S0
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst1|SOMADOR:inst
+S1 <= SomadorP:inst3.sum
+a1 => SomadorP:inst.A
+b1 => SomadorP:inst.B
+a2 => SomadorP:inst1.A
+b2 => SomadorP:inst1.B
+a3 => SomadorP:inst2.A
+b3 => SomadorP:inst2.B
+a4 => SomadorP:inst3.A
+b4 => SomadorP:inst3.B
+S2 <= SomadorP:inst2.sum
+S3 <= SomadorP:inst1.sum
+S4 <= SomadorP:inst.sum
+S0 <= SomadorP:inst3.carryOUT
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst1|SOMADOR:inst|SomadorP:inst3
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst1|SOMADOR:inst|SomadorP:inst2
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst1|SOMADOR:inst|SomadorP:inst1
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst1|SOMADOR:inst|SomadorP:inst
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst4
+OUT0 <= SOMADOR:inst.S4
+IN3 => inst7.IN0
+IN0 => inst4.IN0
+IN0 => inst2.IN1
+IN0 => inst1.IN0
+IN2 => inst6.IN0
+IN1 => inst5.IN0
+OUT1 <= SOMADOR:inst.S3
+OUT2 <= SOMADOR:inst.S2
+OUT3 <= SOMADOR:inst.S1
+SINAL <= SOMADOR:inst.S0
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst4|SOMADOR:inst
+S1 <= SomadorP:inst3.sum
+a1 => SomadorP:inst.A
+b1 => SomadorP:inst.B
+a2 => SomadorP:inst1.A
+b2 => SomadorP:inst1.B
+a3 => SomadorP:inst2.A
+b3 => SomadorP:inst2.B
+a4 => SomadorP:inst3.A
+b4 => SomadorP:inst3.B
+S2 <= SomadorP:inst2.sum
+S3 <= SomadorP:inst1.sum
+S4 <= SomadorP:inst.sum
+S0 <= SomadorP:inst3.carryOUT
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst4|SOMADOR:inst|SomadorP:inst3
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst4|SOMADOR:inst|SomadorP:inst2
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst4|SOMADOR:inst|SomadorP:inst1
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst4|SOMADOR:inst|SomadorP:inst
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst5
+S1 <= SomadorP:inst3.sum
+a1 => SomadorP:inst.A
+b1 => SomadorP:inst.B
+a2 => SomadorP:inst1.A
+b2 => SomadorP:inst1.B
+a3 => SomadorP:inst2.A
+b3 => SomadorP:inst2.B
+a4 => SomadorP:inst3.A
+b4 => SomadorP:inst3.B
+S2 <= SomadorP:inst2.sum
+S3 <= SomadorP:inst1.sum
+S4 <= SomadorP:inst.sum
+S0 <= SomadorP:inst3.carryOUT
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst5|SomadorP:inst3
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst5|SomadorP:inst2
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst5|SomadorP:inst1
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|SOMADOR:inst5|SomadorP:inst
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst
+OUT0 <= SOMADOR:inst.S4
+IN3 => inst7.IN0
+IN0 => inst4.IN0
+IN0 => inst2.IN1
+IN0 => inst1.IN0
+IN2 => inst6.IN0
+IN1 => inst5.IN0
+OUT1 <= SOMADOR:inst.S3
+OUT2 <= SOMADOR:inst.S2
+OUT3 <= SOMADOR:inst.S1
+SINAL <= SOMADOR:inst.S0
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst|SOMADOR:inst
+S1 <= SomadorP:inst3.sum
+a1 => SomadorP:inst.A
+b1 => SomadorP:inst.B
+a2 => SomadorP:inst1.A
+b2 => SomadorP:inst1.B
+a3 => SomadorP:inst2.A
+b3 => SomadorP:inst2.B
+a4 => SomadorP:inst3.A
+b4 => SomadorP:inst3.B
+S2 <= SomadorP:inst2.sum
+S3 <= SomadorP:inst1.sum
+S4 <= SomadorP:inst.sum
+S0 <= SomadorP:inst3.carryOUT
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst|SOMADOR:inst|SomadorP:inst3
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst|SOMADOR:inst|SomadorP:inst2
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst|SOMADOR:inst|SomadorP:inst1
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst|SOMADOR:inst|SomadorP:inst
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst6
+OUT0 <= SOMADOR:inst.S4
+IN3 => inst7.IN0
+IN0 => inst4.IN0
+IN0 => inst2.IN1
+IN0 => inst1.IN0
+IN2 => inst6.IN0
+IN1 => inst5.IN0
+OUT1 <= SOMADOR:inst.S3
+OUT2 <= SOMADOR:inst.S2
+OUT3 <= SOMADOR:inst.S1
+SINAL <= SOMADOR:inst.S0
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst6|SOMADOR:inst
+S1 <= SomadorP:inst3.sum
+a1 => SomadorP:inst.A
+b1 => SomadorP:inst.B
+a2 => SomadorP:inst1.A
+b2 => SomadorP:inst1.B
+a3 => SomadorP:inst2.A
+b3 => SomadorP:inst2.B
+a4 => SomadorP:inst3.A
+b4 => SomadorP:inst3.B
+S2 <= SomadorP:inst2.sum
+S3 <= SomadorP:inst1.sum
+S4 <= SomadorP:inst.sum
+S0 <= SomadorP:inst3.carryOUT
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst6|SOMADOR:inst|SomadorP:inst3
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst6|SOMADOR:inst|SomadorP:inst2
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst6|SOMADOR:inst|SomadorP:inst1
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|COMPLEMENTO:inst6|SOMADOR:inst|SomadorP:inst
+sum <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+A => inst.IN0
+A => inst8.IN0
+A => inst4.IN1
+B => inst.IN1
+B => inst9.IN0
+B => inst4.IN0
+carryIN => inst7.IN1
+carryIN => inst8.IN1
+carryIN => inst9.IN1
+carryOUT <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MENOR|PROJULA:inst4|Block2:inst57
+OUTPUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => Block3:inst.A0
+A0 => projeto:inst3.A0
+B0 => Block3:inst.B0
+B0 => projeto:inst3.B0
+A1 => Block3:inst.A1
+A1 => projeto:inst3.A1
+B1 => Block3:inst.B1
+B1 => projeto:inst3.B1
+A2 => Block3:inst.A2
+A2 => projeto:inst3.A2
+B2 => Block3:inst.B2
+B2 => projeto:inst3.B2
+A3 => Block3:inst.A3
+A3 => projeto:inst3.A3
+B3 => Block3:inst.B3
+B3 => projeto:inst3.B3
+A4 => Block3:inst.A4
+A4 => projeto:inst3.A4
+B4 => Block3:inst.B4
+B4 => projeto:inst3.B4
+SEL0 => inst11.IN1
+SEL0 => inst5.IN5
+SEL0 => inst15.IN0
+SEL1 => inst11.IN2
+SEL1 => inst8.IN0
+SEL1 => inst14.IN0
+SEL2 => inst17.IN0
+SEL2 => inst5.IN3
+SEL2 => inst4.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst57|Block3:inst
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst7.IN0
+B4 => inst4.IN1
+B3 => inst7.IN1
+B3 => inst3.IN1
+A4 => inst7.IN2
+A4 => inst4.IN0
+A3 => inst7.IN3
+A3 => inst3.IN0
+A2 => inst7.IN4
+A2 => inst2.IN0
+B2 => inst7.IN5
+B2 => inst2.IN1
+B1 => inst7.IN6
+B1 => inst1.IN1
+A1 => inst7.IN7
+A1 => inst1.IN0
+A0 => inst.IN0
+B0 => inst.IN1
+
+
+|MENOR|PROJULA:inst4|Block2:inst57|projeto:inst3
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst7.IN0
+A1 => inst24.IN0
+A1 => inst.IN0
+A1 => inst2.IN0
+A1 => inst11.IN0
+B1 => inst.IN1
+B1 => inst25.IN0
+B1 => inst2.IN1
+B1 => inst11.IN2
+A3 => inst30.IN0
+A3 => inst20.IN0
+A3 => inst4.IN0
+A3 => inst11.IN5
+A2 => inst19.IN0
+A2 => inst27.IN1
+A2 => inst3.IN0
+A2 => inst11.IN1
+B2 => inst19.IN1
+B2 => inst28.IN0
+B2 => inst3.IN1
+B2 => inst11.IN3
+B3 => inst20.IN1
+B3 => inst31.IN0
+B3 => inst4.IN1
+B3 => inst11.IN4
+A4 => inst32.IN1
+A4 => inst21.IN0
+A4 => inst5.IN0
+A4 => inst11.IN6
+B4 => inst21.IN1
+B4 => inst34.IN0
+B4 => inst5.IN1
+B4 => inst11.IN7
+B0 => inst37.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst105
+OUTPUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => Block3:inst.A0
+A0 => projeto:inst3.A0
+B0 => Block3:inst.B0
+B0 => projeto:inst3.B0
+A1 => Block3:inst.A1
+A1 => projeto:inst3.A1
+B1 => Block3:inst.B1
+B1 => projeto:inst3.B1
+A2 => Block3:inst.A2
+A2 => projeto:inst3.A2
+B2 => Block3:inst.B2
+B2 => projeto:inst3.B2
+A3 => Block3:inst.A3
+A3 => projeto:inst3.A3
+B3 => Block3:inst.B3
+B3 => projeto:inst3.B3
+A4 => Block3:inst.A4
+A4 => projeto:inst3.A4
+B4 => Block3:inst.B4
+B4 => projeto:inst3.B4
+SEL0 => inst11.IN1
+SEL0 => inst5.IN5
+SEL0 => inst15.IN0
+SEL1 => inst11.IN2
+SEL1 => inst8.IN0
+SEL1 => inst14.IN0
+SEL2 => inst17.IN0
+SEL2 => inst5.IN3
+SEL2 => inst4.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst105|Block3:inst
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst7.IN0
+B4 => inst4.IN1
+B3 => inst7.IN1
+B3 => inst3.IN1
+A4 => inst7.IN2
+A4 => inst4.IN0
+A3 => inst7.IN3
+A3 => inst3.IN0
+A2 => inst7.IN4
+A2 => inst2.IN0
+B2 => inst7.IN5
+B2 => inst2.IN1
+B1 => inst7.IN6
+B1 => inst1.IN1
+A1 => inst7.IN7
+A1 => inst1.IN0
+A0 => inst.IN0
+B0 => inst.IN1
+
+
+|MENOR|PROJULA:inst4|Block2:inst105|projeto:inst3
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst7.IN0
+A1 => inst24.IN0
+A1 => inst.IN0
+A1 => inst2.IN0
+A1 => inst11.IN0
+B1 => inst.IN1
+B1 => inst25.IN0
+B1 => inst2.IN1
+B1 => inst11.IN2
+A3 => inst30.IN0
+A3 => inst20.IN0
+A3 => inst4.IN0
+A3 => inst11.IN5
+A2 => inst19.IN0
+A2 => inst27.IN1
+A2 => inst3.IN0
+A2 => inst11.IN1
+B2 => inst19.IN1
+B2 => inst28.IN0
+B2 => inst3.IN1
+B2 => inst11.IN3
+B3 => inst20.IN1
+B3 => inst31.IN0
+B3 => inst4.IN1
+B3 => inst11.IN4
+A4 => inst32.IN1
+A4 => inst21.IN0
+A4 => inst5.IN0
+A4 => inst11.IN6
+B4 => inst21.IN1
+B4 => inst34.IN0
+B4 => inst5.IN1
+B4 => inst11.IN7
+B0 => inst37.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst100
+OUTPUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => Block3:inst.A0
+A0 => projeto:inst3.A0
+B0 => Block3:inst.B0
+B0 => projeto:inst3.B0
+A1 => Block3:inst.A1
+A1 => projeto:inst3.A1
+B1 => Block3:inst.B1
+B1 => projeto:inst3.B1
+A2 => Block3:inst.A2
+A2 => projeto:inst3.A2
+B2 => Block3:inst.B2
+B2 => projeto:inst3.B2
+A3 => Block3:inst.A3
+A3 => projeto:inst3.A3
+B3 => Block3:inst.B3
+B3 => projeto:inst3.B3
+A4 => Block3:inst.A4
+A4 => projeto:inst3.A4
+B4 => Block3:inst.B4
+B4 => projeto:inst3.B4
+SEL0 => inst11.IN1
+SEL0 => inst5.IN5
+SEL0 => inst15.IN0
+SEL1 => inst11.IN2
+SEL1 => inst8.IN0
+SEL1 => inst14.IN0
+SEL2 => inst17.IN0
+SEL2 => inst5.IN3
+SEL2 => inst4.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst100|Block3:inst
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst7.IN0
+B4 => inst4.IN1
+B3 => inst7.IN1
+B3 => inst3.IN1
+A4 => inst7.IN2
+A4 => inst4.IN0
+A3 => inst7.IN3
+A3 => inst3.IN0
+A2 => inst7.IN4
+A2 => inst2.IN0
+B2 => inst7.IN5
+B2 => inst2.IN1
+B1 => inst7.IN6
+B1 => inst1.IN1
+A1 => inst7.IN7
+A1 => inst1.IN0
+A0 => inst.IN0
+B0 => inst.IN1
+
+
+|MENOR|PROJULA:inst4|Block2:inst100|projeto:inst3
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst7.IN0
+A1 => inst24.IN0
+A1 => inst.IN0
+A1 => inst2.IN0
+A1 => inst11.IN0
+B1 => inst.IN1
+B1 => inst25.IN0
+B1 => inst2.IN1
+B1 => inst11.IN2
+A3 => inst30.IN0
+A3 => inst20.IN0
+A3 => inst4.IN0
+A3 => inst11.IN5
+A2 => inst19.IN0
+A2 => inst27.IN1
+A2 => inst3.IN0
+A2 => inst11.IN1
+B2 => inst19.IN1
+B2 => inst28.IN0
+B2 => inst3.IN1
+B2 => inst11.IN3
+B3 => inst20.IN1
+B3 => inst31.IN0
+B3 => inst4.IN1
+B3 => inst11.IN4
+A4 => inst32.IN1
+A4 => inst21.IN0
+A4 => inst5.IN0
+A4 => inst11.IN6
+B4 => inst21.IN1
+B4 => inst34.IN0
+B4 => inst5.IN1
+B4 => inst11.IN7
+B0 => inst37.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst98
+OUTPUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => Block3:inst.A0
+A0 => projeto:inst3.A0
+B0 => Block3:inst.B0
+B0 => projeto:inst3.B0
+A1 => Block3:inst.A1
+A1 => projeto:inst3.A1
+B1 => Block3:inst.B1
+B1 => projeto:inst3.B1
+A2 => Block3:inst.A2
+A2 => projeto:inst3.A2
+B2 => Block3:inst.B2
+B2 => projeto:inst3.B2
+A3 => Block3:inst.A3
+A3 => projeto:inst3.A3
+B3 => Block3:inst.B3
+B3 => projeto:inst3.B3
+A4 => Block3:inst.A4
+A4 => projeto:inst3.A4
+B4 => Block3:inst.B4
+B4 => projeto:inst3.B4
+SEL0 => inst11.IN1
+SEL0 => inst5.IN5
+SEL0 => inst15.IN0
+SEL1 => inst11.IN2
+SEL1 => inst8.IN0
+SEL1 => inst14.IN0
+SEL2 => inst17.IN0
+SEL2 => inst5.IN3
+SEL2 => inst4.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst98|Block3:inst
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst7.IN0
+B4 => inst4.IN1
+B3 => inst7.IN1
+B3 => inst3.IN1
+A4 => inst7.IN2
+A4 => inst4.IN0
+A3 => inst7.IN3
+A3 => inst3.IN0
+A2 => inst7.IN4
+A2 => inst2.IN0
+B2 => inst7.IN5
+B2 => inst2.IN1
+B1 => inst7.IN6
+B1 => inst1.IN1
+A1 => inst7.IN7
+A1 => inst1.IN0
+A0 => inst.IN0
+B0 => inst.IN1
+
+
+|MENOR|PROJULA:inst4|Block2:inst98|projeto:inst3
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst7.IN0
+A1 => inst24.IN0
+A1 => inst.IN0
+A1 => inst2.IN0
+A1 => inst11.IN0
+B1 => inst.IN1
+B1 => inst25.IN0
+B1 => inst2.IN1
+B1 => inst11.IN2
+A3 => inst30.IN0
+A3 => inst20.IN0
+A3 => inst4.IN0
+A3 => inst11.IN5
+A2 => inst19.IN0
+A2 => inst27.IN1
+A2 => inst3.IN0
+A2 => inst11.IN1
+B2 => inst19.IN1
+B2 => inst28.IN0
+B2 => inst3.IN1
+B2 => inst11.IN3
+B3 => inst20.IN1
+B3 => inst31.IN0
+B3 => inst4.IN1
+B3 => inst11.IN4
+A4 => inst32.IN1
+A4 => inst21.IN0
+A4 => inst5.IN0
+A4 => inst11.IN6
+B4 => inst21.IN1
+B4 => inst34.IN0
+B4 => inst5.IN1
+B4 => inst11.IN7
+B0 => inst37.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst99
+OUTPUT <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => Block3:inst.A0
+A0 => projeto:inst3.A0
+B0 => Block3:inst.B0
+B0 => projeto:inst3.B0
+A1 => Block3:inst.A1
+A1 => projeto:inst3.A1
+B1 => Block3:inst.B1
+B1 => projeto:inst3.B1
+A2 => Block3:inst.A2
+A2 => projeto:inst3.A2
+B2 => Block3:inst.B2
+B2 => projeto:inst3.B2
+A3 => Block3:inst.A3
+A3 => projeto:inst3.A3
+B3 => Block3:inst.B3
+B3 => projeto:inst3.B3
+A4 => Block3:inst.A4
+A4 => projeto:inst3.A4
+B4 => Block3:inst.B4
+B4 => projeto:inst3.B4
+SEL0 => inst11.IN1
+SEL0 => inst5.IN5
+SEL0 => inst15.IN0
+SEL1 => inst11.IN2
+SEL1 => inst8.IN0
+SEL1 => inst14.IN0
+SEL2 => inst17.IN0
+SEL2 => inst5.IN3
+SEL2 => inst4.IN0
+
+
+|MENOR|PROJULA:inst4|Block2:inst99|Block3:inst
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+B4 => inst7.IN0
+B4 => inst4.IN1
+B3 => inst7.IN1
+B3 => inst3.IN1
+A4 => inst7.IN2
+A4 => inst4.IN0
+A3 => inst7.IN3
+A3 => inst3.IN0
+A2 => inst7.IN4
+A2 => inst2.IN0
+B2 => inst7.IN5
+B2 => inst2.IN1
+B1 => inst7.IN6
+B1 => inst1.IN1
+A1 => inst7.IN7
+A1 => inst1.IN0
+A0 => inst.IN0
+B0 => inst.IN1
+
+
+|MENOR|PROJULA:inst4|Block2:inst99|projeto:inst3
+S0 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+A0 => inst7.IN0
+A1 => inst24.IN0
+A1 => inst.IN0
+A1 => inst2.IN0
+A1 => inst11.IN0
+B1 => inst.IN1
+B1 => inst25.IN0
+B1 => inst2.IN1
+B1 => inst11.IN2
+A3 => inst30.IN0
+A3 => inst20.IN0
+A3 => inst4.IN0
+A3 => inst11.IN5
+A2 => inst19.IN0
+A2 => inst27.IN1
+A2 => inst3.IN0
+A2 => inst11.IN1
+B2 => inst19.IN1
+B2 => inst28.IN0
+B2 => inst3.IN1
+B2 => inst11.IN3
+B3 => inst20.IN1
+B3 => inst31.IN0
+B3 => inst4.IN1
+B3 => inst11.IN4
+A4 => inst32.IN1
+A4 => inst21.IN0
+A4 => inst5.IN0
+A4 => inst11.IN6
+B4 => inst21.IN1
+B4 => inst34.IN0
+B4 => inst5.IN1
+B4 => inst11.IN7
+B0 => inst37.IN0
+
+
